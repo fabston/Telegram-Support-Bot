@@ -1,0 +1,3 @@
+pyTelegramBotAPI
+pymysql
+arrow
