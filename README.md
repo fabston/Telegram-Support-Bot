@@ -23,7 +23,7 @@ This is a Telegram Support Bot written in Python. It's meant to help you manage 
 
 ## Usage
 1. Create and setup a MySQL database and it's table `users`. The required fields can be found [here](https://i.imgur.com/cP15QfD.png)
-1. Clone this repository `git clone `
+1. Clone this repository `git clone https://github.com/sixBit/Telegram-Support-Bot`
 2. Create your virtual environment `python3.8 -m venv TradingView-Webhook-Bot`
 3. Activate it `source TradingView-Webhook-Bot/bin/activate`
 4. Install all requirements `pip install -r requirements.txt`

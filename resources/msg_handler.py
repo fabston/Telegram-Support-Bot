@@ -44,7 +44,7 @@ def time_zone():
     return current_time
 
 def repo():
-    msg = '\n\nYou can find this bots source code [here](github.com).'
+    msg = '\n\nYou can find this bots source code [here](github.com/sixBit/Telegram-Support-Bot).'
     return msg
 
 def spam_handler_warning(bot, user_id, message):
