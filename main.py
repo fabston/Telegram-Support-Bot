@@ -59,6 +59,26 @@ def ot_handler(message):
     else:
         pass
 
+# Close a ticket manually
+@bot.message_handler(commands=['close', 'c'])
+def ot_handler(message):
+    if message.chat.id == config.support_chat:
+        if message.reply_to_message and '(#id' in message.reply_to_message.text:
+            bot.send_chat_action(message.chat.id, 'typing')
+            user_id = int(message.reply_to_message.text.split('(#id')[1].split(')')[0])
+            ticket_status = mysql.user_tables(user_id)['open_ticket']
+
+            if ticket_status == 0:
+                bot.reply_to(message, '❌ That user has no open ticket...')
+            else:
+                # Reset Open Tickets as well as the Spamfilter
+                mysql.reset_open_ticket(user_id)
+                bot.reply_to(message, '✅ Ok, closed that users ticket!')
+        else:
+            bot.reply_to(message, 'ℹ️ You\'d have to reply to a message')
+    else:
+        pass
+
 # Get Banned User
 @bot.message_handler(commands=['banned'])
 def ot_handler(message):
@@ -121,7 +141,7 @@ def ot_handler(message):
     except TypeError:
         bot.reply_to(message, '❌ Are you sure I interacted with that user before...?')
 
-# Unban Useer
+# Un-ban Useer
 @bot.message_handler(commands=['unban'])
 def ot_handler(message):
     try:
