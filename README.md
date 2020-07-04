@@ -8,6 +8,7 @@
     <br /><a href="https://github.com/sixBit/Telegram-Support-Bot/stargazers"><img src="https://img.shields.io/github/stars/sixbit/Telegram-Support-Bot?style=social" alt="GitHub stars"></a>
     <a href="https://github.com/sixBit/Telegram-Support-Bot/network/members"><img src="https://img.shields.io/github/forks/sixbit/Telegram-Support-Bot?style=social" alt="GitHub forks"></a>
     <a href="https://github.com/sixBit/Telegram-Support-Bot/watchers"><img src="https://img.shields.io/github/watchers/sixbit/Telegram-Support-Bot?style=social" alt="GitHub watchers"></a>
+    <br /><a href="https://sixbit.io/telegram"><img src="https://img.shields.io/badge/Join-Server-00457c.svg?logo=telegram&style=plastic" alt="Join Telegram Server"></a>
 </p>
 
 <p align="center">
