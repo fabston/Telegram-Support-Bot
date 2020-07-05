@@ -8,7 +8,7 @@
     <br /><a href="https://github.com/sixBit/Telegram-Support-Bot/stargazers"><img src="https://img.shields.io/github/stars/sixbit/Telegram-Support-Bot?style=social" alt="GitHub stars"></a>
     <a href="https://github.com/sixBit/Telegram-Support-Bot/network/members"><img src="https://img.shields.io/github/forks/sixbit/Telegram-Support-Bot?style=social" alt="GitHub forks"></a>
     <a href="https://github.com/sixBit/Telegram-Support-Bot/watchers"><img src="https://img.shields.io/github/watchers/sixbit/Telegram-Support-Bot?style=social" alt="GitHub watchers"></a>
-    <br /><a href="https://sixbit.io/telegram"><img src="https://img.shields.io/badge/Join-Server-00457c.svg?logo=telegram&style=plastic" alt="Join Telegram Server"></a>
+    <br /><a href="https://sixbit.io/telegram"><img src="https://img.shields.io/badge/Join-Community%20Server-00457c.svg?logo=telegram&style=plastic" alt="Join Telegram Server"></a>
 </p>
 
 <p align="center">
@@ -51,7 +51,13 @@ The **Telegram Support Bot** 📬 helps you to manage and organize your support 
 
 ## Installation
 > 💡 Best to run the bot on a VPS. My recommendation would be [vultr](sixbit.io/vultr)
-1. Create and setup a MySQL database and it's table `users`. The required fields can be found [here](https://i.imgur.com/cP15QfD.png)
+1. Log into MySQL (`sudo mysql`) and create a dedicated database and user with the following commands:
+  ```
+  CREATE DATABASE TelegramSupportBot;
+  CREATE USER 'tsbuser'@'localhost' IDENTIFIED BY 'your-password';
+  GRANT ALL PRIVILEGES ON TelegramSupportBot . * TO 'tsbuser'@'localhost';
+  exit;
+  ```
 2. Clone this repository `git clone https://github.com/sixBit/Telegram-Support-Bot.git`
 3. Create your virtual environment `python3 -m venv Telegram-Support-Bot`
 4. Activate it `source Telegram-Support-Bot/bin/activate && cd Telegram-Support-Bot`

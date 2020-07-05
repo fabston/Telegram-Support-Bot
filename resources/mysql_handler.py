@@ -19,10 +19,22 @@ def getConnection():
                                  autocommit=True)
     return connection
 
+def createTables():
+    connection = getConnection()
+    with connection.cursor() as cursor:
+        tablename="users"
+        try:
+            cursor.execute(
+                "	CREATE TABLE `" + tablename + "` (  `userid` int(11) DEFAULT NULL,  `open_ticket` int(4) DEFAULT 0,  `banned` int(4) DEFAULT 0,  \
+                `open_ticket_spam` int(4) DEFAULT 1,  `open_ticket_link` varchar(50) DEFAULT NULL,  `open_ticket_time` datetime NOT NULL DEFAULT '1000-01-01 00:00:00')")
+            return createTables
+        except Exception as e:
+            pass
+
 def spam(user_id):
     connection = getConnection()
     with connection.cursor() as cursor:
-        sql = "SELECT banned, open_ticket, lang, open_ticket_spam FROM users WHERE userid = %s"
+        sql = "SELECT banned, open_ticket, open_ticket_spam FROM users WHERE userid = %s"
         cursor.execute(sql, user_id)
         data = cursor.fetchone()
         ticket_spam = data['open_ticket_spam']
@@ -35,7 +47,7 @@ def spam(user_id):
 def user_tables(user_id):
     connection = getConnection()
     with connection.cursor() as cursor:
-        sql = "SELECT open_ticket, lang, banned, open_ticket_time, open_ticket_spam, open_ticket_link FROM users WHERE userid = %s"
+        sql = "SELECT open_ticket, banned, open_ticket_time, open_ticket_spam, open_ticket_link FROM users WHERE userid = %s"
         cursor.execute(sql, user_id)
         data = cursor.fetchone()
         return data
@@ -109,13 +121,6 @@ def unban_user(user_id):
         banned.pop(banned.index(user_id))
         return unban_user
 
-def set_lang(lang, user_id):
-    connection = getConnection()
-    with connection.cursor() as cursor:
-        sql = "UPDATE users SET lang = %s WHERE userid = %s"
-        cursor.execute(sql, (lang, user_id))
-        return set_lang
-
-
+createTables  = createTables()
 open_tickets  = getOpenTickets()
 banned        = getBanned()

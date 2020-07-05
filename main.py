@@ -15,6 +15,8 @@ import arrow
 
 bot = telebot.TeleBot(config.token)
 
+mysql.createTables
+
 # Start Command
 @bot.message_handler(commands=['start'])
 def start(message):
@@ -175,6 +177,7 @@ def ot_handler(message):
 @bot.message_handler(func=lambda message: message.chat.type == 'private')
 def echo_all(message):
     while True:
+        mysql.start_bot(message.chat.id)
         user_id = message.chat.id
         message = message
         banned = mysql.user_tables(user_id)['banned']

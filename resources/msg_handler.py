@@ -44,7 +44,7 @@ def time_zone():
     return current_time
 
 def repo():
-    msg = '\n\n[» Source Code](github.com/sixBit/Telegram-Support-Bot).'
+    msg = '\n\n[» Source Code](github.com/sixBit/Telegram-Support-Bot)'
     return msg
 
 def spam_handler_warning(bot, user_id, message):
@@ -60,7 +60,7 @@ def spam_handler_blocked(bot, user_id, message):
         ticket_spam = mysql.user_tables(user_id)['open_ticket_spam']
         if ticket_spam == config.spam_protection - 1:
             fwd_handler(user_id, bot, message)
-            bot.reply_to(message, 'We will be with you shortly.\n\n{}, to prevent spam you can only send us *1* more message.' \
+            bot.reply_to(message, 'We will be with you shortly.\n\n{}, to prevent spam you can only send us *1* more message.\n\n' \
                                   f'_The support\'s local time is_ `{current_time}`.'.format(message.from_user.first_name), parse_mode='Markdown')
             return spam_handler_blocked
 
