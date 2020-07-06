@@ -33,6 +33,7 @@ The **Telegram Support Bot** 📬 helps you to manage and organize your support 
 - List all open/unanswered tickets (time passed since ticket opened is being shown as well)
 - Ban / Un-ban users (via reply or user id). User won't be able to interact with the bot anymore
 - List banned users, with last interaction point
+- Customisable FAQ text
 - Detect the users language and display it as an emoji
 
 > 💡 Got a feature idea? Open an [issue](https://github.com/sixBit/Telegram-Support-Bot/issues/new) and I might implement it.
@@ -50,27 +51,27 @@ The **Telegram Support Bot** 📬 helps you to manage and organize your support 
 | Command | Description |
 | --- | --- |
 | /start | Starts the bot |
+| /faq | Show the FAQ's |
 
 
 ## Installation
 > ⚠️ Best to run the bot on a VPS. My recommendation would be [vultr](sixbit.io/vultr)
 1. Log into MySQL (`sudo mysql`) and create a dedicated database and user with the following commands:
-  ```
-  CREATE DATABASE TelegramSupportBot;
-  CREATE USER 'tsbuser'@'localhost' IDENTIFIED BY 'your-password';
-  GRANT ALL PRIVILEGES ON TelegramSupportBot . * TO 'tsbuser'@'localhost';
-  exit;
-  ```
-2. Clone this repository `git clone https://github.com/sixBit/Telegram-Support-Bot.git`
-3. Create your virtual environment `python3 -m venv Telegram-Support-Bot`
-4. Activate it `source Telegram-Support-Bot/bin/activate && cd Telegram-Support-Bot`
-5. Install all requirements `pip install -r requirements.txt`
-6. Edit and update [`config.py`](https://github.com/sixBit/Telegram-Support-Bot/blob/master/config.py)
-7. Run the bot `python main.py`
+   1. `CREATE DATABASE TelegramSupportBot;`
+   1. `CREATE USER 'tsbuser'@'localhost' IDENTIFIED BY 'your-password';`
+   1. `GRANT ALL PRIVILEGES ON TelegramSupportBot . * TO 'tsbuser'@'localhost';`
+   1. `exit;`
+1. Clone this repository `git clone https://github.com/sixBit/Telegram-Support-Bot.git`
+1. Create your virtual environment `python3 -m venv Telegram-Support-Bot`
+1. Activate it `source Telegram-Support-Bot/bin/activate && cd Telegram-Support-Bot`
+1. Install all requirements `pip install -r requirements.txt`
+1. Edit and update [`config.py`](https://github.com/sixBit/Telegram-Support-Bot/blob/master/config.py)
+1. Run the bot `python main.py`
 
 
 ## Images
-![Telegram Support Bot](https://i.imgur.com/qf0gmAs.jpg)
+![Telegram Support Bot](https://i.imgur.com/JQ7lJce.jpg)
 
 ## How can I help?
-All kinds of contributions are welcome! The most basic way to show your support is to `⭐️star` the project, or to raise [`🐞issues`](https://github.com/sixBit/Telegram-Support-Bot/issues/new).
+All kinds of contributions are welcome!
+The most basic way to show your support is to `⭐️star` the project, or to raise [`🐞issues`](https://github.com/sixBit/Telegram-Support-Bot/issues/new).

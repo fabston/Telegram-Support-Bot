@@ -17,14 +17,29 @@ bot = telebot.TeleBot(config.token)
 
 mysql.createTables
 
+# Callback Handlers
+@bot.callback_query_handler(func=lambda call: True)
+def callback_inline(call):
+     if call.message:
+        if call.data == "faqCallbackdata":
+            msg = bot.edit_message_text(chat_id=call.message.chat.id, message_id=call.message.message_id, text=config.text_messages['faqs'], parse_mode='Markdown', disable_web_page_preview=True)
+
 # Start Command
 @bot.message_handler(commands=['start'])
 def start(message):
     if message.chat.type == 'private':
-        bot.send_message(message.chat.id, config.text_messages['start'].format(message.from_user.first_name) + msg.repo(), parse_mode='Markdown', disable_web_page_preview=True)
+        bot.send_message(message.chat.id, config.text_messages['start'].format(message.from_user.first_name) + msg.repo(), parse_mode='Markdown', disable_web_page_preview=True, reply_markup=markup.faqButton())
         mysql.start_bot(message.chat.id)
     else:
         bot.reply_to(message, 'Please send me a PM if you\'d like to talk to the Support Team.')
+
+# FAQ Command
+@bot.message_handler(commands=['faq'])
+def start(message):
+    if message.chat.type == 'private':
+        bot.reply_to(message, config.text_messages['faqs'], parse_mode='Markdown', disable_web_page_preview=True)
+    else:
+        pass
 
 # Get All Open Tickets
 @bot.message_handler(commands=['tickets', 't'])

@@ -7,4 +7,9 @@
 import config
 from telebot.types import InlineKeyboardMarkup, InlineKeyboardButton
 
-# Coming soon ...
+def faqButton():
+    markup = InlineKeyboardMarkup()
+    markup.add(InlineKeyboardButton('Read our FAQ\'s', callback_data='faqCallbackdata'))
+    return markup
+
+
