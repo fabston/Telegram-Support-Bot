@@ -57,7 +57,6 @@ def ot_handler(message):
                 int(user), time_since, ot_link, alert)
 
         bot.send_message(message.chat.id, ot_msg, parse_mode='Markdown')
-
     else:
         pass
 
@@ -100,7 +99,6 @@ def ot_handler(message):
                 int(user), ot_link)
 
         bot.send_message(message.chat.id, ot_msg, parse_mode='Markdown')
-
     else:
         pass
 
@@ -109,8 +107,8 @@ def ot_handler(message):
 def ot_handler(message):
     try:
         if message.chat.id == config.support_chat:
-            if message.reply_to_message and '(#id' in message.reply_to_message.text:
-                user_id = int(message.reply_to_message.text.split('(#id')[1].split(')')[0])
+            if message.reply_to_message and '(#id' in msg.msgCheck(message):
+                user_id = msg.getUserID(message)
                 banned_status = mysql.user_tables(user_id)['banned']
 
                 if banned_status == 1:
@@ -148,8 +146,8 @@ def ot_handler(message):
 def ot_handler(message):
     try:
         if message.chat.id == config.support_chat:
-            if message.reply_to_message and '(#id' in message.reply_to_message.text:
-                user_id = int(message.reply_to_message.text.split('(#id')[1].split(')')[0])
+            if message.reply_to_message and '(#id' in msg.msgCheck(message):
+                user_id = msg.getUserID(message)
                 banned_status = mysql.user_tables(user_id)['banned']
 
                 if banned_status == 0:
@@ -174,15 +172,15 @@ def ot_handler(message):
 
 
 # Message Forward Handler (User - Support)
-@bot.message_handler(func=lambda message: message.chat.type == 'private')
+@bot.message_handler(func=lambda message: message.chat.type == 'private', content_types=['text', 'photo', 'document'])
 def echo_all(message):
     while True:
         mysql.start_bot(message.chat.id)
-        user_id = message.chat.id
-        message = message
-        banned = mysql.user_tables(user_id)['banned']
+        user_id       = message.chat.id
+        message       = message
+        banned        = mysql.user_tables(user_id)['banned']
         ticket_status = mysql.user_tables(user_id)['open_ticket']
-        ticket_spam = mysql.user_tables(user_id)['open_ticket_spam']
+        ticket_spam   = mysql.user_tables(user_id)['open_ticket_spam']
 
         if banned == 1:
             return
@@ -200,15 +198,18 @@ def echo_all(message):
             return
 
 # Message Forward Handler (Support - User)
-@bot.message_handler()
+@bot.message_handler(content_types=['text', 'photo', 'document'])
 def echo_all(message):
     while True:
         try:
-            try:
-                user_id = int(message.reply_to_message.text.split('(#id')[1].split(')')[0])
+            try:    
+                user_id       = msg.getUserID(message)
+                message       = message
+                text          = message.text
+                msg_check     = msg.msgCheck(message)
                 ticket_status = mysql.user_tables(user_id)['open_ticket']
                 banned_status = mysql.user_tables(user_id)['banned']
-                
+
                 if banned_status == 1:
                     # If User is banned - un-ban user and sent message
                     mysql.unban_user(user_id)
@@ -220,16 +221,14 @@ def echo_all(message):
                     continue
 
                 else:
-                    if message.reply_to_message and '(#id' in message.reply_to_message.text:
-                        bot.send_chat_action(user_id, 'typing')
-                        bot.send_message(user_id, \
-                        '*From {}:*\n\n{}'.format(message.from_user.first_name, message.text), parse_mode='Markdown')
+                    if message.reply_to_message and '(#id' in msg_check:
+                        msg.snd_handler(user_id, bot, message, text)
                         return
 
             except telebot.apihelper.ApiException: 
                 bot.reply_to(message, '❌ I was unable to send that message...\nThe user might\'ve blocked me.')
                 return
-
+                
         except Exception as e: 
             bot.reply_to(message, '❌ Invalid command!')
             return

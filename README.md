@@ -27,12 +27,15 @@
 The **Telegram Support Bot** 📬 helps you to manage and organize your support inquiries using the [`pyTelegramBotAPI`](https://github.com/eternnoir/pyTelegramBotAPI) libary.
 
 ## Features
+- **Text**, **Photos** and **Documents** are being forwarded
 - Spam protection (sensitivity can be set in [`config.py`](https://github.com/sixBit/Telegram-Support-Bot/blob/master/config.py))
 - Bad words filter (using regex, words can be set in [`config.py`](https://github.com/sixBit/Telegram-Support-Bot/blob/master/config.py))
 - List all open/unanswered tickets (time passed since ticket opened is being shown as well)
 - Ban / Un-ban users (via reply or user id). User won't be able to interact with the bot anymore
 - List banned users, with last interaction point
 - Detect the users language and display it as an emoji
+
+> 💡 Got a feature idea? Open an [issue](https://github.com/sixBit/Telegram-Support-Bot/issues/new) and I might implement it.
 
 ### Staff commands
 | Command | Description |
@@ -50,7 +53,7 @@ The **Telegram Support Bot** 📬 helps you to manage and organize your support 
 
 
 ## Installation
-> 💡 Best to run the bot on a VPS. My recommendation would be [vultr](sixbit.io/vultr)
+> ⚠️ Best to run the bot on a VPS. My recommendation would be [vultr](sixbit.io/vultr)
 1. Log into MySQL (`sudo mysql`) and create a dedicated database and user with the following commands:
   ```
   CREATE DATABASE TelegramSupportBot;
@@ -67,7 +70,7 @@ The **Telegram Support Bot** 📬 helps you to manage and organize your support 
 
 
 ## Images
-![Telegram Support Bot](https://i.imgur.com/z2bSKvz.jpg)
+![Telegram Support Bot](https://i.imgur.com/qf0gmAs.jpg)
 
 ## How can I help?
-All kinds of contributions are welcome! The most basic way to show your support is to `⭐️ star` the project, or to raise [issues](https://github.com/sixBit/Telegram-Support-Bot/issues/new).
+All kinds of contributions are welcome! The most basic way to show your support is to `⭐️star` the project, or to raise [`🐞issues`](https://github.com/sixBit/Telegram-Support-Bot/issues/new).
