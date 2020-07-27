@@ -1,6 +1,6 @@
 # --------------------------------------------- #
 # Plugin Name           : Telegram Support Bot  #
-# Author Name           : sixBit                #
+# Author Name           : fspranger             #
 # File Name             : markups_handler.py    #
 # --------------------------------------------- #
 
