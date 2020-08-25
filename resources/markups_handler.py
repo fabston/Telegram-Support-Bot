@@ -1,6 +1,6 @@
 # --------------------------------------------- #
 # Plugin Name           : Telegram Support Bot  #
-# Author Name           : fspranger             #
+# Author Name           : TheDevFab             #
 # File Name             : markups_handler.py    #
 # --------------------------------------------- #
 
