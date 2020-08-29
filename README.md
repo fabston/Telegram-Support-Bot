@@ -26,7 +26,7 @@
 The **Telegram Support Bot** 📬 helps you to manage and organize your support inquiries using the [`pyTelegramBotAPI`](https://github.com/eternnoir/pyTelegramBotAPI) libary.
 
 ## Features
-- **Text**, **Photos** and **Documents** are being forwarded
+- **Text**, **Photos**, **Documents** and **Stickers** are being forwarded
 - Spam protection (sensitivity can be set in [`config.py`](https://github.com/TheDevFab/Telegram-Support-Bot/blob/master/config.py))
 - Bad words filter (using regex, words can be set in [`config.py`](https://github.com/TheDevFab/Telegram-Support-Bot/blob/master/config.py))
 - List all open/unanswered tickets (time passed since ticket opened is being shown as well)
