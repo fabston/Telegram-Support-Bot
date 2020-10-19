@@ -54,7 +54,7 @@ The **Telegram Support Bot** 📬 helps you to manage and organize your support 
 
 
 ## Installation
-> ⚠️ Best to run the bot on a VPS. I can recommend [Hetzner](https://hetzner.com/).
+> ⚠️ Best to run the bot on a VPS. I can recommend [Hetzner](https://hetzner.cloud/?ref=tQ1NdT8zbfNY).
 1. Log into MySQL (`sudo mysql`) and create a dedicated database and user with the following commands:
    1. `CREATE DATABASE TelegramSupportBot;`
    1. `CREATE USER 'tsbuser'@'localhost' IDENTIFIED BY 'your-password';`
@@ -73,4 +73,4 @@ The **Telegram Support Bot** 📬 helps you to manage and organize your support 
 
 ## How can I help?
 All kinds of contributions are welcome!
-The most basic way to show your support is to `⭐️star` the project, or to raise [`🐞issues`](https://github.com/TheDevFab/Telegram-Support-Bot/issues/new). To keep me going you could also buy me a [`☕️ coffee`](http://fabian.cx/buymeacoffee). Any kind of support means a lot to me. 🙌
+The most basic way to show your support is to `⭐️star` the project, or to raise [`🐞issues`](https://github.com/TheDevFab/Telegram-Support-Bot/issues/new).
