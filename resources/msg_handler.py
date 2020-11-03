@@ -93,6 +93,10 @@ def fwd_handler(user_id, bot, message):
             
         else:
             bot.reply_to(message, '❌ That format is not supported and won\'t be forwarded.')
+    except Exception as e:
+        print(e)
+        bot.reply_to(message, '❌ Error processing message, unable to create support ticket. Please try again with a different message.')
+        return
 
     channel_id   = re.sub(r"-100(\S+)", r"\1", str(config.support_chat))
     message_id   = msg.message_id
@@ -107,7 +111,7 @@ def bad_words_handler(bot, message):
             if re.findall(config.regex_filter['bad_words'], msg_type(message)):
                 bot.reply_to(message, '❗️ Watch your tongue...')
                 return bad_words_handler
-        except Exception as e:
+        except exception as e:
             pass
 
 def time_zone():
