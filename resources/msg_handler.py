@@ -72,27 +72,26 @@ def fwd_handler(user_id, bot, message):
     mysql.spam(message.chat.id)
     lang_emoji = emoji.lang_emoji(message.from_user.language_code)
 
-    try:
-        if message.content_type == 'text':
-            msg = bot.send_message(config.support_chat, "[{0}{1}](tg://user?id={2}) (#id{2}) | {3}\n\n{4}".format(
-                                message.from_user.first_name, ' {0}'.format(message.from_user.last_name) if message.from_user.last_name else '',
-                                message.from_user.id, lang_emoji, message.text), parse_mode='Markdown', disable_web_page_preview=True)
-
-        elif message.content_type == 'photo':
-            msg = bot.send_photo(config.support_chat, message.photo[-1].file_id, caption="[{0}{1}](tg://user?id={2}) (#id{2}) | {3}\n\n{4}".format(
+    if message.content_type == 'text':
+        msg = bot.send_message(config.support_chat, "[{0}{1}](tg://user?id={2}) (#id{2}) | {3}\n\n{4}".format(
                             message.from_user.first_name, ' {0}'.format(message.from_user.last_name) if message.from_user.last_name else '',
-                            message.from_user.id, lang_emoji, msgCaption(message)), parse_mode='Markdown')
+                            message.from_user.id, lang_emoji, message.text), parse_mode='Markdown', disable_web_page_preview=True)
 
-        elif message.content_type == 'document':
-            msg = bot.send_document(config.support_chat, message.document.file_id, caption="[{0}{1}](tg://user?id={2}) (#id{2}) | {3}\n\n{4}".format(
-                            message.from_user.first_name, ' {0}'.format(message.from_user.last_name) if message.from_user.last_name else '',
-                            message.from_user.id, lang_emoji, msgCaption(message)), parse_mode='Markdown')
+    elif message.content_type == 'photo':
+        msg = bot.send_photo(config.support_chat, message.photo[-1].file_id, caption="[{0}{1}](tg://user?id={2}) (#id{2}) | {3}\n\n{4}".format(
+                        message.from_user.first_name, ' {0}'.format(message.from_user.last_name) if message.from_user.last_name else '',
+                        message.from_user.id, lang_emoji, msgCaption(message)), parse_mode='Markdown')
 
-        elif message.content_type == 'sticker':
-            msg = bot.send_sticker(user_id, message.sticker.file_id)
-            
-        else:
-            bot.reply_to(message, '❌ That format is not supported and won\'t be forwarded.')
+    elif message.content_type == 'document':
+        msg = bot.send_document(config.support_chat, message.document.file_id, caption="[{0}{1}](tg://user?id={2}) (#id{2}) | {3}\n\n{4}".format(
+                        message.from_user.first_name, ' {0}'.format(message.from_user.last_name) if message.from_user.last_name else '',
+                        message.from_user.id, lang_emoji, msgCaption(message)), parse_mode='Markdown')
+
+    elif message.content_type == 'sticker':
+        msg = bot.send_sticker(user_id, message.sticker.file_id)
+        
+    else:
+        bot.reply_to(message, '❌ That format is not supported and won\'t be forwarded.')
 
     channel_id   = re.sub(r"-100(\S+)", r"\1", str(config.support_chat))
     message_id   = msg.message_id
