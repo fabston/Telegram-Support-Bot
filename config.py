@@ -26,7 +26,8 @@ open_ticket_emoji   = 24        # After X amount of HOURS an emoji will pop up a
 # Messages
 text_messages = {
     'start': 'Hi {}, how can we help you today?',
-    'faqs': 'Your FAQ text goes in here.'
+    'faqs': 'Your FAQ text goes in here.',
+    'support_response': 'From: {}'                  # Support response is being added automatically. {} = refers to the staffs first name.
 }
 
 # Regex (https://regex101.com/)

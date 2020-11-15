@@ -49,15 +49,15 @@ def snd_handler(user_id, bot, message, txt):
         if message.content_type == 'text':
             bot.send_chat_action(user_id, 'typing')
             msg = bot.send_message(user_id, \
-            '*From {}:*\n\n{}'.format(message.from_user.first_name, message.text), parse_mode='Markdown', disable_web_page_preview=True)
+            config.text_messages['support_response'].format(message.from_user.first_name) + f'\n\n{message.text}', parse_mode='Markdown', disable_web_page_preview=True)
 
         elif message.content_type == 'photo':
             bot.send_chat_action(user_id, 'upload_photo')
-            msg = bot.send_photo(user_id, message.photo[-1].file_id, caption='*From {}:*\n\n{}'.format(message.from_user.first_name, msgCaption(message)), parse_mode='Markdown')
+            msg = bot.send_photo(user_id, message.photo[-1].file_id, caption=config.text_messages['support_response'].format(message.from_user.first_name) + f'\n\n{msgCaption(message)}', parse_mode='Markdown')
 
         elif message.content_type == 'document':
             bot.send_chat_action(user_id, 'upload_document')
-            msg = bot.send_document(user_id, message.document.file_id, caption='*From {}:*\n\n{}'.format(message.from_user.first_name, msgCaption(message)), parse_mode='Markdown')
+            msg = bot.send_document(user_id, message.document.file_id, caption=config.text_messages['support_response'].format(message.from_user.first_name) + f'\n\n{msgCaption(message)}', parse_mode='Markdown')
         else:
             pass
 
