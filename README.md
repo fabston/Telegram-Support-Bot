@@ -1,13 +1,13 @@
-<p align="center"><a href="https://github.com/TheDevFab/Telegram-Support-Bot" target="_blank"><img src="https://i.imgur.com/vft81xp.png"></a></p>
+<p align="center"><a href="https://github.com/vsnz/Telegram-Support-Bot" target="_blank"><img src="https://i.imgur.com/vft81xp.png"></a></p>
 
 <p align="center">
     <a href="https://www.python.org/downloads/release/python-380/"><img src="https://img.shields.io/badge/python-3.8-blue.svg?style=plastic" alt="Python version"></a>
-    <a href="https://github.com/TheDevFab/Telegram-Support-Bot/blob/master/LICENSE"><img src="https://img.shields.io/github/license/TheDevFab/Telegram-Support-Bot?style=plastic" alt="GitHub license"></a>
-    <a href="https://github.com/TheDevFab/Telegram-Support-Bot/issues"><img src="https://img.shields.io/github/issues/TheDevFab/Telegram-Support-Bot?style=plastic" alt="GitHub issues"></a>
-    <a href="https://github.com/TheDevFab/Telegram-Support-Bot/pulls"><img src="https://img.shields.io/github/issues-pr/TheDevFab/Telegram-Support-Bot?style=plastic" alt="GitHub pull requests"></a>
-    <br /><a href="https://github.com/TheDevFab/Telegram-Support-Bot/stargazers"><img src="https://img.shields.io/github/stars/TheDevFab/Telegram-Support-Bot?style=social" alt="GitHub stars"></a>
-    <a href="https://github.com/TheDevFab/Telegram-Support-Bot/network/members"><img src="https://img.shields.io/github/forks/TheDevFab/Telegram-Support-Bot?style=social" alt="GitHub forks"></a>
-    <a href="https://github.com/TheDevFab/Telegram-Support-Bot/watchers"><img src="https://img.shields.io/github/watchers/TheDevFab/Telegram-Support-Bot?style=social" alt="GitHub watchers"></a>
+    <a href="https://github.com/vsnz/Telegram-Support-Bot/blob/master/LICENSE"><img src="https://img.shields.io/github/license/vsnz/Telegram-Support-Bot?style=plastic" alt="GitHub license"></a>
+    <a href="https://github.com/vsnz/Telegram-Support-Bot/issues"><img src="https://img.shields.io/github/issues/vsnz/Telegram-Support-Bot?style=plastic" alt="GitHub issues"></a>
+    <a href="https://github.com/vsnz/Telegram-Support-Bot/pulls"><img src="https://img.shields.io/github/issues-pr/vsnz/Telegram-Support-Bot?style=plastic" alt="GitHub pull requests"></a>
+    <br /><a href="https://github.com/vsnz/Telegram-Support-Bot/stargazers"><img src="https://img.shields.io/github/stars/vsnz/Telegram-Support-Bot?style=social" alt="GitHub stars"></a>
+    <a href="https://github.com/vsnz/Telegram-Support-Bot/network/members"><img src="https://img.shields.io/github/forks/vsnz/Telegram-Support-Bot?style=social" alt="GitHub forks"></a>
+    <a href="https://github.com/vsnz/Telegram-Support-Bot/watchers"><img src="https://img.shields.io/github/watchers/vsnz/Telegram-Support-Bot?style=social" alt="GitHub watchers"></a>
 </p>
 
 <p align="center">
@@ -27,15 +27,15 @@ The **Telegram Support Bot** 📬 helps you to manage and organize your support 
 
 ## Features
 - **Text**, **Photos**, **Documents** and **Stickers** are being forwarded
-- Spam protection (sensitivity can be set in [`config.py`](https://github.com/TheDevFab/Telegram-Support-Bot/blob/master/config.py))
-- Bad words filter (using regex, words can be set in [`config.py`](https://github.com/TheDevFab/Telegram-Support-Bot/blob/master/config.py))
+- Spam protection (sensitivity can be set in [`config.py`](https://github.com/vsnz/Telegram-Support-Bot/blob/master/config.py))
+- Bad words filter (using regex, words can be set in [`config.py`](https://github.com/vsnz/Telegram-Support-Bot/blob/master/config.py))
 - List all open/unanswered tickets (time passed since ticket opened is being shown as well)
 - Ban / Un-ban users (via reply or user id). User won't be able to interact with the bot anymore
 - List banned users, with last interaction point
 - Customisable FAQ text
 - Detect the users language and display it as an emoji
 
-> 💡 Got a feature idea? Open an [issue](https://github.com/TheDevFab/Telegram-Support-Bot/issues/new) and I might implement it.
+> 💡 Got a feature idea? Open an [issue](https://github.com/vsnz/Telegram-Support-Bot/issues/new) and I might implement it.
 
 ### Staff commands
 | Command | Description |
@@ -60,11 +60,11 @@ The **Telegram Support Bot** 📬 helps you to manage and organize your support 
    1. `CREATE USER 'tsbuser'@'localhost' IDENTIFIED BY 'your-password';`
    1. `GRANT ALL PRIVILEGES ON TelegramSupportBot . * TO 'tsbuser'@'localhost';`
    1. `exit;`
-1. Clone this repository `git clone https://github.com/TheDevFab/Telegram-Support-Bot.git`
+1. Clone this repository `git clone https://github.com/vsnz/Telegram-Support-Bot.git`
 1. Create your virtual environment `python3 -m venv Telegram-Support-Bot`
 1. Activate it `source Telegram-Support-Bot/bin/activate && cd Telegram-Support-Bot`
 1. Install all requirements `pip install -r requirements.txt`
-1. Edit and update [`config.py`](https://github.com/TheDevFab/Telegram-Support-Bot/blob/master/config.py)
+1. Edit and update [`config.py`](https://github.com/vsnz/Telegram-Support-Bot/blob/master/config.py)
 1. Run the bot `python main.py`
 
 
@@ -73,4 +73,4 @@ The **Telegram Support Bot** 📬 helps you to manage and organize your support 
 
 ## How can I help?
 All kinds of contributions are welcome!
-The most basic way to show your support is to `⭐️star` the project, or to raise [`🐞issues`](https://github.com/TheDevFab/Telegram-Support-Bot/issues/new).
+The most basic way to show your support is to `⭐️star` the project, or to raise [`🐞issues`](https://github.com/vsnz/Telegram-Support-Bot/issues/new).

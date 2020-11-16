@@ -1,6 +1,6 @@
 # --------------------------------------------- #
 # Plugin Name           : Telegram Support Bot  #
-# Author Name           : TheDevFab             #
+# Author Name           : vsnz                  #
 # File Name             : msg_handler.py        #
 # --------------------------------------------- #
 
@@ -114,7 +114,7 @@ def time_zone():
     return current_time
 
 def repo():
-    msg = '\n\n[» Source Code](github.com/sixBit/Telegram-Support-Bot)'
+    msg = '\n\n[» Source Code](github.com/vsnz/Telegram-Support-Bot)'
     return msg
 
 def spam_handler_warning(bot, user_id, message):

@@ -1,6 +1,6 @@
 # --------------------------------------------- #
 # Plugin Name           : Telegram Support Bot  #
-# Author Name           : TheDevFab             #
+# Author Name           : vsnz                  #
 # File Name             : lang_emojis.py        #
 # --------------------------------------------- #
 
