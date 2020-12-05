@@ -72,5 +72,10 @@ The **Telegram Support Bot** 📬 helps you to manage and organize your support 
 ![Telegram Support Bot](https://i.imgur.com/JQ7lJce.jpg)
 
 ## How can I help?
-All kinds of contributions are welcome!
-The most basic way to show your support is to `⭐️star` the project, or to raise [`🐞issues`](https://github.com/vsnz/Telegram-Support-Bot/issues/new).
+All kinds of contributions are welcome 🙌! The most basic way to show your support is to `⭐️ star` the project, or raise [`🐞 issues`](https://github.com/vsnz/Telegram-Support-Bot/issues/new). You 
+
+***
+
+<p align="center">
+    <a href="https://liberapay.com/vsnz/donate"><img alt="Donate using LiberaPay" src="https://liberapay.com/assets/widgets/donate.svg"></a>
+</p>
