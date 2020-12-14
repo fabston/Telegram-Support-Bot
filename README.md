@@ -1,4 +1,4 @@
-<p align="center"><a href="https://github.com/vsnz/Telegram-Support-Bot" target="_blank"><img src="https://i.imgur.com/vft81xp.png"></a></p>
+<p align="center"><a href="https://github.com/vsnz/Telegram-Support-Bot" target="_blank"><img src="https://raw.githubusercontent.com/vsnz/Telegram-Support-Bot/master/assets/logo.png"></a></p>
 
 <p align="center">
     <a href="https://www.python.org/downloads/release/python-380/"><img src="https://img.shields.io/badge/python-3.8-blue.svg?style=plastic" alt="Python version"></a>
