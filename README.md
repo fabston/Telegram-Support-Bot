@@ -54,7 +54,7 @@ The **Telegram Support Bot** 📬 helps you to manage and organize your support 
 
 
 ## Installation
-> ⚠️ Best to run the bot on a VPS. I can recommend [Hetzner](https://hetzner.cloud/?ref=tQ1NdT8zbfNY).
+> ⚠️ Best to run the bot on a VPS. I can recommend <a href="https://vsnz.net/hetzner" title="Get €20 in cloud credits">Hetzner</a>'s CX11 VPS for 2.89€/month.
 1. Log into MySQL (`sudo mysql`) and create a dedicated database and user with the following commands:
    1. `CREATE DATABASE TelegramSupportBot;`
    1. `CREATE USER 'tsbuser'@'localhost' IDENTIFIED BY 'your-password';`
@@ -77,5 +77,5 @@ All kinds of contributions are welcome 🙌! The most basic way to show your sup
 ***
 
 <p align="center">
-    <a href="https://liberapay.com/vsnz/donate"><img alt="Donate using LiberaPay" src="https://liberapay.com/assets/widgets/donate.svg"></a>
+    <a href="https://www.buymeacoffee.com/vsnz"><img alt="Buy Me A Coffee" title="☕️" src="https://raw.githubusercontent.com/vsnz/Telegram-Support-Bot/master/assets/bmac.png" width=200px></a>
 </p>
