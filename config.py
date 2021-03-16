@@ -1,6 +1,6 @@
 # --------------------------------------------- #
 # Plugin Name           : Telegram Support Bot  #
-# Author Name           : vsnz                  #
+# Author Name           : fabston               #
 # File Name             : config.py             #
 # --------------------------------------------- #
 
