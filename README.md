@@ -35,7 +35,7 @@ The **Telegram Support Bot** 📬 helps you to manage and organize your support 
 - Customisable FAQ text
 - Detect the users language and display it as an emoji
 
-> 💡 Got a feature idea? Open an [issue](https://github.com/fabston/Telegram-Support-Bot/issues/new?assignees=&labels=&template=feature-request---.md) and I might implement it.
+> 💡 Got a feature idea? Open an [issue](https://github.com/fabston/Telegram-Support-Bot/issues/new?assignees=&labels=enhancement&template=feature-request---.md) and I might implement it.
 
 ### Staff commands
 | Command | Description |
@@ -69,7 +69,7 @@ The **Telegram Support Bot** 📬 helps you to manage and organize your support 
 
 
 ## Images
-![Telegram Support Bot](https://raw.githubusercontent.com/fabston/Telegram-Support-Bot/master/assets/about.png)
+![Telegram Support Bot](https://raw.githubusercontent.com/fabston/Telegram-Support-Bot/master/assets/about.jpg)
 
 ## How can I help?
 All kinds of contributions are welcome 🙌! The most basic way to show your support is to `⭐️ star` the project, or raise [`🐞 issues`](https://github.com/fabston/Telegram-Support-Bot/issues/new/choose). You can also support this project by becoming a [sponsor on GitHub](https://github.com/sponsors/fabston) to ensure this journey continues indefinitely! 🚀 
