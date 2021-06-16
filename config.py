@@ -10,7 +10,7 @@ token = '<YOUR BOT TOKEN>'      # More: https://core.telegram.org/bots#3-how-do-
 # MySQL Database
 mysql_host = 'localhost'
 mysql_db   = 'TelegramSupportBot'
-mysql_user = 'tsbuser'
+mysql_user = 'SupportBotUser'
 mysql_pw   = '<YOUR PASSWORD>'
 
 # Support Chat (Chat ID)

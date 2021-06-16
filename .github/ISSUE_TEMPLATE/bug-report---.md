@@ -1,25 +1,22 @@
 ---
 name: "Bug report \U0001F41E"
-about: Create a report to help us improve
+about: Create a bug report
+labels: bug
 
 ---
 
-## Description
-
-Describe the issue that you're seeing.
+## Describe the bug
+A clear and concise description of what the bug is.
 
 ### Steps to reproduce
+Steps to reproduce the behavior.
 
-Clear steps describing how to reproduce the issue. Please please please link to a demo project if possible, this makes your issue _much_ easier to diagnose (seriously).
-
-### Expected result
-
-What should happen?
-
-### Actual result
-
-What happened.
+### Expected behavior
+A clear and concise description of what you expected to happen.
 
 ### Environment
+ - OS: [e.g. Arch Linux]
+ - Other details that you think may affect.
 
-Paste the information here as shown by `npm run check`
+### Additional context
+Add any other context about the problem here.

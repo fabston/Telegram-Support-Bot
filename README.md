@@ -23,7 +23,7 @@
 </p>
 
 ## About
-The **Telegram Support Bot** 📬 helps you to manage and organize your support inquiries using the [`pyTelegramBotAPI`](https://github.com/eternnoir/pyTelegramBotAPI) libary.
+The **Telegram Support Bot** 📬 helps you to manage and organize your support inquiries.
 
 ## Features
 - **Text**, **Photos**, **Documents** and **Stickers** are being forwarded
@@ -35,7 +35,7 @@ The **Telegram Support Bot** 📬 helps you to manage and organize your support 
 - Customisable FAQ text
 - Detect the users language and display it as an emoji
 
-> 💡 Got a feature idea? Open an [issue](https://github.com/fabston/Telegram-Support-Bot/issues/new) and I might implement it.
+> 💡 Got a feature idea? Open an [issue](https://github.com/fabston/Telegram-Support-Bot/issues/new?assignees=&labels=&template=feature-request---.md) and I might implement it.
 
 ### Staff commands
 | Command | Description |
@@ -57,8 +57,8 @@ The **Telegram Support Bot** 📬 helps you to manage and organize your support 
 > ⚠️ Best to run the bot on a VPS. I can recommend <a href="https://fabston.dev/hetzner" title="Get €20 in cloud credits">Hetzner</a>'s CX11 VPS for 2.89€/month.
 1. Log into MySQL (`sudo mysql`) and create a dedicated database and user with the following commands:
    1. `CREATE DATABASE TelegramSupportBot;`
-   1. `CREATE USER 'tsbuser'@'localhost' IDENTIFIED BY 'your-password';`
-   1. `GRANT ALL PRIVILEGES ON TelegramSupportBot . * TO 'tsbuser'@'localhost';`
+   1. `CREATE USER 'SupportBotUser'@'localhost' IDENTIFIED BY '<YOUR PASSWORD>';`
+   1. `GRANT ALL PRIVILEGES ON TelegramSupportBot . * TO 'SupportBotUser'@'localhost';`
    1. `exit;`
 1. Clone this repository `git clone https://github.com/fabston/Telegram-Support-Bot.git`
 1. Create your virtual environment `python3 -m venv Telegram-Support-Bot`
@@ -69,10 +69,10 @@ The **Telegram Support Bot** 📬 helps you to manage and organize your support 
 
 
 ## Images
-![Telegram Support Bot](https://i.imgur.com/JQ7lJce.jpg)
+![Telegram Support Bot](https://raw.githubusercontent.com/fabston/Telegram-Support-Bot/master/assets/about.png)
 
 ## How can I help?
-All kinds of contributions are welcome 🙌! The most basic way to show your support is to `⭐️ star` the project, or raise [`🐞 issues`](https://github.com/fabston/Telegram-Support-Bot/issues/new). You can also support this project by becoming a [sponsor on GitHub](https://github.com/sponsors/fabston) to ensure this journey continues indefinitely! 🚀 
+All kinds of contributions are welcome 🙌! The most basic way to show your support is to `⭐️ star` the project, or raise [`🐞 issues`](https://github.com/fabston/Telegram-Support-Bot/issues/new/choose). You can also support this project by becoming a [sponsor on GitHub](https://github.com/sponsors/fabston) to ensure this journey continues indefinitely! 🚀 
 
 ***
 
