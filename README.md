@@ -1,7 +1,7 @@
 <p align="center"><a href="https://github.com/fabston/Telegram-Support-Bot" target="_blank"><img src="https://raw.githubusercontent.com/fabston/Telegram-Support-Bot/master/assets/logo.png"></a></p>
 
 <p align="center">
-    <a href="https://www.python.org/downloads/release/python-380/"><img src="https://img.shields.io/badge/python-3.8-blue.svg?style=plastic" alt="Python version"></a>
+    <a href="https://www.python.org/downloads/release/python-380/"><img src="https://img.shields.io/badge/python-3.9-blue.svg?style=plastic" alt="Python version"></a>
     <a href="https://github.com/fabston/Telegram-Support-Bot/blob/master/LICENSE"><img src="https://img.shields.io/github/license/fabston/Telegram-Support-Bot?style=plastic" alt="GitHub license"></a>
     <a href="https://github.com/fabston/Telegram-Support-Bot/issues"><img src="https://img.shields.io/github/issues/fabston/Telegram-Support-Bot?style=plastic" alt="GitHub issues"></a>
     <a href="https://github.com/fabston/Telegram-Support-Bot/pulls"><img src="https://img.shields.io/github/issues-pr/fabston/Telegram-Support-Bot?style=plastic" alt="GitHub pull requests"></a>
@@ -77,5 +77,5 @@ All kinds of contributions are welcome 🙌! The most basic way to show your sup
 ***
 
 <p align="center">
-    <a href="https://www.buymeacoffee.com/fabston"><img alt="Buy Me A Coffee" title="☕️" src="https://raw.githubusercontent.com/fabston/Telegram-Support-Bot/master/assets/bmac.png" width=200px></a>
+    <a href="https://www.buymeacoffee.com/fabston"><img alt="Buy Me A Coffee" title="☕️" src="https://github.com/fabston/Telegram-Airdrop-Bot/blob/main/assets/bmac.png?raw=true" width=200px></a>
 </p>
