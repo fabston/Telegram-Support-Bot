@@ -54,7 +54,7 @@ The **Telegram Support Bot** 📬 helps you to manage and organize your support 
 
 
 ## Installation
-> ⚠️ Best to run the bot on a VPS. I can recommend <a href="https://fabston.dev/hetzner" title="Get €20 in cloud credits">Hetzner</a>'s CX11 VPS for 2.89€/month.
+> ⚠️ Best to run the bot on a VPS. I can recommend <a href="https://hetzner.cloud/?ref=tQ1NdT8zbfNY" title="Get €20 in cloud credits">Hetzner</a>'s CX11 VPS for 2.89€/month.
 1. Log into MySQL (`sudo mysql`) and create a dedicated database and user with the following commands:
    1. `CREATE DATABASE TelegramSupportBot;`
    1. `CREATE USER 'SupportBotUser'@'localhost' IDENTIFIED BY '<YOUR PASSWORD>';`
@@ -72,7 +72,7 @@ The **Telegram Support Bot** 📬 helps you to manage and organize your support 
 ![Telegram Support Bot](https://raw.githubusercontent.com/fabston/Telegram-Support-Bot/master/assets/about.jpg)
 
 ## How can I help?
-All kinds of contributions are welcome 🙌! The most basic way to show your support is to `⭐️ star` the project, or raise [`🐞 issues`](https://github.com/fabston/Telegram-Support-Bot/issues/new/choose). You can also support this project by becoming a [sponsor on GitHub](https://github.com/sponsors/fabston) to ensure this journey continues indefinitely! 🚀 
+All kinds of contributions are welcome 🙌! The most basic way to show your support is to `⭐️ star` the project, or raise [`🐞 issues`](https://github.com/fabston/Telegram-Support-Bot/issues/new/choose). 
 
 ***
 
