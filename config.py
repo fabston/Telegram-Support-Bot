@@ -5,19 +5,19 @@
 # --------------------------------------------- #
 
 # Telegram
-token = '<YOUR BOT TOKEN>'      # More: https://core.telegram.org/bots#3-how-do-i-create-a-bot
+token = '<5951457105:AAEQn5W6M_XjXGOKfeJKSbxbCNZoXmzf8ME>'      # More: https://core.telegram.org/bots#3-how-do-i-create-a-bot
 
 # MySQL Database
 mysql_host = 'localhost'
 mysql_db   = 'TelegramSupportBot'
 mysql_user = 'SupportBotUser'
-mysql_pw   = '<YOUR PASSWORD>'
+mysql_pw   = '<Ihateu123@>'
 
 # Support Chat (Chat ID)
-support_chat =                  # Example: -1001429781350 | To find out your channels ID use: https://t.me/getidsbot
+support_chat = '5739545898'               # Example: -1001429781350 | To find out your channels ID use: https://t.me/getidsbot
 
 # Misc
-time_zone           = 'GMT+2'   # Supports time zone
+time_zone           = 'GMT+6'   # Supports time zone
 bad_words_toggle    = True      # Enable / disable bad words filter
 spam_toggle         = True      # Enable / disable spam filter
 spam_protection     = 5         # How many consecutive messages can be sent without a reply from the team
